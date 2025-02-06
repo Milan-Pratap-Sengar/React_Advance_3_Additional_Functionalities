@@ -11,8 +11,8 @@ export default function App() {
 
   // we just utilize the context (RULE-3)
   const {FetchBlogData}=useContext(AppContext)
-  const [searchParams,setSearchParams]=useSearchParams();
-  const location=useLocation(); 
+  const [searchParams,setSearchParams]=useSearchParams(); //here there is only one parameter/query in our URL (i.e page). if if searchParams variable contains value then it will be used otherwise 1 will be set as default page in useEffect() function
+  const location=useLocation();  // it is the initialization of useLocation() functionalities so that you can use location.pathname attribute
 
   useEffect(()=>{
     const page=searchParams.get("page") ?? 1;  //if the value does not found then it will store 1 in this variable

@@ -43,9 +43,7 @@ function BlogPage(){
     return (
         <div className="w-full h-full flex flex-col justify-center items-center gap-y-1">
             <Header/>
-            <div>
-                <button onClick={()=>navigation(-1)}>Back</button>
-            </div>
+            
             {
                 loading ? <Spinner/> :
                 blog ? 

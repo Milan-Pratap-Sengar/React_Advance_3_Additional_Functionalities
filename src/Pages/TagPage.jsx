@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 function TagPage(){
     const navigation=useNavigate();
     const location=useLocation();
-    const tag=location.pathname.split("/").at(-1);
+    const tag=location.pathname.split("/").at(-1); // we will fetch this tag from URL so that we can display it in our UI in <h2> tag
     return (
         <div className="w-full h-full flex flex-col justify-center items-center gap-y-1">
             <Header/>

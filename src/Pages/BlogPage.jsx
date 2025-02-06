@@ -11,7 +11,6 @@ function BlogPage(){
     const [blog,setBlog]=useState(null);
     const [relatedBlogs,setRelatedBlogs]=useState([])
     const location=useLocation();
-    const navigation=useNavigate();
     const blogId=location.pathname.split("/").at(-1)
     const {loading ,setLoading}=useContext(AppContext)
 
